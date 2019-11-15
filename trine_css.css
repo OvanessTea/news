@@ -1,0 +1,342 @@
+@font-face{
+
+font-family: 'PoiretOne';
+
+src: url('fonts/PoiretOne.ttf');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
+@font-face{
+
+font-family: 'adam_cg';
+
+src: url('fonts/adam_cg.ttf');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
+
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: #fff;
+	color: white;
+	font-size: 30px;
+}
+
+.group:after {
+ 	content: "";
+ 	display: table;
+ 	clear: both;
+}
+
+.header {
+	margin-bottom: 10px; 
+}
+
+#inner-header {
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	position: relative;
+	height: 45px;
+	background: #ffffff;
+}
+
+.content {
+	width: 80%;
+	float: left;
+}
+
+
+
+#inner-content {
+	border-right: 1px solid #000000;
+	padding: 10px;
+	min-height: 600px;
+	background: #ffffff;
+}
+
+
+#sidebars {
+	width: 20%;
+	float: left;
+}
+
+.sidebar-1 {
+	width: 20%;
+	float: left;
+	padding-left: 10px;
+
+}
+
+#inner-sidebar-1 {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	min-height: 600px;
+	background-color: #ffffff;
+}
+
+caption{
+	color: black;
+	font-family: PoiretOne, fantasy;
+}
+
+.footer {
+	margin-top: 10px;
+	margin-left: 10px;
+
+}
+
+#inner-footer {
+	height: 100px;
+	background: #ffffff;
+}
+
+.head-butt {
+	position: absolute;
+	top: 7px;
+	left: 34px;
+	margin: auto;
+}
+
+.main-name {
+	text-align: center;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;  
+	font-family: Adam_cg, sans-serif;
+	margin-bottom: 0px;
+}
+
+.sidebar-news {
+	font-size: 20px;
+	margin: 3px;
+	margin-top: 0px;
+	border-bottom: 1px solid #000000;
+	text-align: center;
+	color: black;
+	font-family: PoiretOne, fantasy;
+}
+
+.news-bulletin {
+	font-size: 20px;
+	color: black;
+	font-family: Arial, sans-serif;
+}
+
+
+.butt {
+	padding: 5px;
+	font-size: 20px;
+	margin-right: 50px;
+	color:#000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: PoiretOne, fantasy;
+}
+
+.butt:hover {
+	padding: 5px;
+	background-color: #f3f3f3;
+	border-radius: 3px;
+}
+
+.outline:focus {
+	outline: none !important;
+}
+
+.dws {
+	position: absolute;
+	top: 34%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+}
+
+.blocImg {
+	width: 600px;
+	height: 338px;
+	overflow: hidden;
+	background: #000;
+	cursor: pointer;
+}
+
+
+.blocImg img {
+	width: 100%;
+	transition: .5s;
+}
+
+
+
+.dws:hover .blocImg img{
+	transform: rotate(-10deg) scale(1.3);
+	filter: blur(1px);
+	opacity: .5;
+}
+
+
+.blocText {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	right: 30px;
+	bottom: 30px;
+}
+
+
+.text {
+	color: #ffffff;
+	padding: 0 20px;
+	opacity: 0;
+	transition: .5s;
+}
+
+.text h2 {
+	font-size: 25px;
+}
+
+.text h2 span {
+	color: orange;
+	padding-bottom: 3px;
+	border-bottom: 2px solid #ffb611;
+}
+
+.text p {
+	position: absolute;
+	top: 140px;
+	width: 500px;
+	border-left: 4px solid #ffb611;
+	padding: 0 10px;
+}
+
+.dws: hover .text {
+	opacity: 1;
+}
+
+.blocText::before,
+.blocText::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.blocText::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform: scale(0, 1);
+}
+
+.blocText::after {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	transform: scale(1, 0);
+}
+
+.dws:hover .blocText::before,
+.dws:hover .blocText::after {
+	transform: scale(1, 1);
+}
+
+.dws:hover .text {
+	opacity: 1;
+}
+
+
+
+
+
+
+.dws-2 {
+	position: absolute;
+	top: 34%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+}
+
+.blocImg-2 {
+	width: 600px;
+	height: 338px;
+	overflow: hidden;
+	background: #000;
+	cursor: pointer;
+}
+
+
+.blocImg-2 img {
+	width: 100%;
+	transition: .5s;
+}
+
+.dws-2:hover .blocImg-2 img{
+	transform: rotate(-10deg) scale(1.3);
+	filter: blur(1px);
+	opacity: .5;
+}
+
+
+.blocText-2 {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	right: 30px;
+	bottom: 30px;
+}
+
+
+.dws-2: hover .text {
+	opacity: 1;
+}
+
+.blocText-2::before,
+.blocText-2::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.blocText-2::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform: scale(0, 1);
+}
+
+
+.blocText-2::after {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	transform: scale(1, 0);
+}
+
+
+.dws-2:hover .blocText-2::before,
+.dws-2:hover .blocText-2::after {
+	transform: scale(1, 1);
+}
+
+
+.dws-2:hover .text {
+	opacity: 1;
+}
