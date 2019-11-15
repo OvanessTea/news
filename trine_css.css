@@ -107,6 +107,30 @@ caption{
 	background: #ffffff;
 }
 
+.pages{
+	margin-left: 10px;
+	float: left;
+}
+
+.footer-news {
+	color: #000;
+	font-family: Arial, sans-serif;
+	margin-bottom: 5px;
+}
+.footer-pages {
+	color: #000;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+}
+
+.contact {
+	float: left;
+	margin-left: 400px;
+}
+.
+
+
+
 .head-butt {
 	position: absolute;
 	top: 7px;
