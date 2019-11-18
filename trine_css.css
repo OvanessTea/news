@@ -39,7 +39,6 @@ body {
 	font-size: 30px;
 }
 
-
 .group:after {
  	content: "";
  	display: table;
@@ -123,6 +122,9 @@ caption{
 	font-family: Arial, sans-serif;
 	text-decoration: none;
 }
+.footer-pages:hover {
+	text-decoration: none;
+}
 
 .contact {
 	float: left;
@@ -176,6 +178,7 @@ caption{
 }
 
 .butt:hover {
+	text-decoration: none;
 	padding: 5px;
 	background-color: #f3f3f3;
 	border-radius: 3px;
